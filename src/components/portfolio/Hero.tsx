@@ -6,7 +6,6 @@ import headshot from "@/assets/nathaniel-headshot.jpg";
 export const Hero = () => {
   return (
     <section id="about" className="relative min-h-screen flex items-center pt-24 pb-20 overflow-hidden">
-      <div className="absolute inset-0 grid-bg pointer-events-none" />
       <div className="absolute inset-x-0 top-0 h-[80vh] bg-glow pointer-events-none" />
 
       <div className="container relative">
