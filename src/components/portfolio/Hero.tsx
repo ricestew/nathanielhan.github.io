@@ -13,11 +13,11 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: name + actions */}
           <div className="flex flex-col items-start text-left">
-            <div className="reveal flex items-center gap-5 mb-10">
+            <div className="reveal flex items-center gap-6 mb-10">
               <img
                 src={headshot}
                 alt={`${profile.name} headshot`}
-                className="h-20 w-20 sm:h-24 sm:w-24 rounded-full object-cover ring-2 ring-primary/40 shadow-soft"
+                className="h-36 w-36 sm:h-44 sm:w-44 lg:h-52 lg:w-52 rounded-full object-cover ring-2 ring-primary/40 shadow-soft shrink-0"
                 style={{ objectPosition: "50% 25%" }}
               />
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium leading-[1.05] font-sans">
