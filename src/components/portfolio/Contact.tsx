@@ -10,8 +10,7 @@ export const Contact = () => {
         <div className="max-w-3xl">
           <h2 className="reveal text-4xl md:text-5xl font-medium mb-8">Contact</h2>
           <p className="reveal text-lg text-muted-foreground max-w-xl mb-10">
-            Open to internships, collaborations, and conversations about information
-            systems, software quality, and audit-grade engineering.
+            Let's connect!
           </p>
 
           <div className="reveal flex flex-wrap gap-4 mb-12">
