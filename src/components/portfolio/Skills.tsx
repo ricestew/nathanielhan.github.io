@@ -5,12 +5,7 @@ export const Skills = () => {
     <section id="skills" className="py-28 md:py-36 relative border-t border-border/40">
       <div className="container">
         <div className="reveal max-w-2xl mb-16">
-          <p className="font-mono text-xs tracking-widest text-primary uppercase mb-4">
-            03 — Skills
-          </p>
-          <h2 className="text-4xl md:text-5xl font-medium">
-            Tools of the <span className="text-gradient">trade.</span>
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-medium">Skills</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-5">

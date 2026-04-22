@@ -5,12 +5,7 @@ export const Experience = () => {
     <section id="experience" className="py-28 md:py-36 relative">
       <div className="container">
         <div className="reveal max-w-2xl mb-16">
-          <p className="font-mono text-xs tracking-widest text-primary uppercase mb-4">
-            02 — Experience
-          </p>
-          <h2 className="text-4xl md:text-5xl font-medium">
-            A track record of <span className="text-gradient">precision work.</span>
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-medium">Experience</h2>
         </div>
 
         <div className="relative">
