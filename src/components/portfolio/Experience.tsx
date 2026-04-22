@@ -1,4 +1,4 @@
-import { experience, education } from "@/data/portfolio";
+import { experience } from "@/data/portfolio";
 
 export const Experience = () => {
   return (
@@ -33,33 +33,6 @@ export const Experience = () => {
                   </ul>
                 </div>
               </article>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-24">
-          <p className="reveal font-mono text-xs tracking-widest text-primary uppercase mb-8">
-            Education
-          </p>
-          <div className="grid md:grid-cols-2 gap-6">
-            {education.map((ed, i) => (
-              <div
-                key={i}
-                className="reveal rounded-2xl border border-border/60 bg-card/50 p-7 hover:border-primary/40 transition-colors"
-              >
-                <div className="flex items-baseline justify-between mb-2 gap-4">
-                  <h3 className="text-xl font-medium">{ed.school}</h3>
-                  <span className="font-mono text-xs text-muted-foreground whitespace-nowrap">
-                    {ed.period}
-                  </span>
-                </div>
-                <p className="text-primary text-sm mb-4">{ed.degree}</p>
-                <ul className="space-y-1.5 text-sm text-muted-foreground">
-                  {ed.details.map((d, j) => (
-                    <li key={j}>— {d}</li>
-                  ))}
-                </ul>
-              </div>
             ))}
           </div>
         </div>
