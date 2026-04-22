@@ -27,10 +27,8 @@ export const Nav = () => {
       }`}
     >
       <nav className="container flex items-center justify-between h-16">
-        <a href="#about" className="font-mono text-sm tracking-tight text-foreground">
-          <span className="text-primary">/</span>nathaniel.han
-        </a>
-        <ul className="hidden md:flex items-center gap-8 text-sm">
+        <div />
+        <ul className="hidden md:flex items-center gap-8 text-base">
           {links.map((l) => (
             <li key={l.href}>
               <a
