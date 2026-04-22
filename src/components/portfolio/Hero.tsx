@@ -1,6 +1,6 @@
-import { Download, Mail, MapPin } from "lucide-react";
+import { Download, Mail, MapPin, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { profile } from "@/data/portfolio";
+import { profile, education } from "@/data/portfolio";
 import headshot from "@/assets/nathaniel-headshot.jpg";
 
 export const Hero = () => {
@@ -40,7 +40,7 @@ export const Hero = () => {
                 </a>
               </Button>
             </div>
-            <div className="reveal flex flex-wrap items-center gap-6 text-sm text-muted-foreground font-mono">
+            <div className="reveal flex flex-wrap items-center gap-6 text-sm text-muted-foreground font-mono mb-8">
               <span className="flex items-center gap-2">
                 <MapPin className="h-3.5 w-3.5 text-primary" />
                 {profile.location}
@@ -48,6 +48,32 @@ export const Hero = () => {
               <a href={`mailto:${profile.email}`} className="hover:text-foreground transition-colors">
                 {profile.email}
               </a>
+            </div>
+
+            <div className="reveal w-full rounded-2xl border border-border/60 bg-card/40 p-5">
+              <div className="flex items-center gap-2 mb-3">
+                <GraduationCap className="h-4 w-4 text-primary" />
+                <h3 className="text-sm font-mono uppercase tracking-wider text-muted-foreground">
+                  Education
+                </h3>
+              </div>
+              {education.map((e) => (
+                <div key={e.school} className="space-y-1">
+                  <div className="flex flex-wrap items-baseline justify-between gap-x-4">
+                    <p className="text-base font-medium text-foreground">{e.school}</p>
+                    <span className="font-mono text-xs text-muted-foreground">{e.period}</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">{e.degree}</p>
+                  <ul className="mt-2 text-sm text-muted-foreground space-y-1">
+                    {e.details.map((d) => (
+                      <li key={d} className="flex gap-2">
+                        <span className="text-primary">›</span>
+                        <span>{d}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
 
