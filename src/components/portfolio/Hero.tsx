@@ -10,7 +10,7 @@ export const Hero = () => {
       <div className="absolute inset-x-0 top-0 h-[80vh] bg-glow pointer-events-none" />
 
       <div className="container relative">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left: name + actions */}
           <div className="flex flex-col items-start text-left">
             <div className="reveal flex items-center gap-6 mb-10">
