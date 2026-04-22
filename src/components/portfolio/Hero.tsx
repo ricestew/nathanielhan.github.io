@@ -10,7 +10,7 @@ export const Hero = () => {
 
       <div className="container relative">
         <div className="max-w-3xl mx-auto text-center flex flex-col items-center">
-          <h1 className="reveal text-5xl sm:text-6xl md:text-7xl font-medium leading-[1.05] mb-10">
+          <h1 className="reveal text-5xl sm:text-6xl md:text-7xl font-medium leading-[1.05] mb-10 font-sans">
             {profile.name.split(" ")[0]}
             <br />
             <span className="text-gradient">{profile.name.split(" ").slice(1).join(" ")}</span>
