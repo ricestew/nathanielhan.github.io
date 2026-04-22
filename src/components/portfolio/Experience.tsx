@@ -2,7 +2,7 @@ import { experience } from "@/data/portfolio";
 
 export const Experience = () => {
   return (
-    <section id="experience" className="py-28 md:py-36 relative">
+    <section id="experience" className="py-28 md:py-36 relative border-t border-border/40">
       <div className="container">
         <div className="reveal max-w-2xl mb-16">
           <h2 className="text-4xl md:text-5xl font-medium">Experience</h2>
