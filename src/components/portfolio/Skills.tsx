@@ -16,9 +16,6 @@ export const Skills = () => {
             >
               <div className="flex items-center justify-between mb-5">
                 <h3 className="text-lg font-medium">{g.category}</h3>
-                <span className="font-mono text-xs text-muted-foreground">
-                  {String(g.items.length).padStart(2, "0")}
-                </span>
               </div>
               <div className="flex flex-wrap gap-2">
                 {g.items.map((item) => (
