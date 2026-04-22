@@ -1,0 +1,74 @@
+import { experience, education } from "@/data/portfolio";
+
+export const Experience = () => {
+  return (
+    <section id="experience" className="py-28 md:py-36 relative">
+      <div className="container">
+        <div className="reveal max-w-2xl mb-16">
+          <p className="font-mono text-xs tracking-widest text-primary uppercase mb-4">
+            02 — Experience
+          </p>
+          <h2 className="text-4xl md:text-5xl font-medium">
+            A track record of <span className="text-gradient">precision work.</span>
+          </h2>
+        </div>
+
+        <div className="relative">
+          <div className="absolute left-0 md:left-[180px] top-2 bottom-2 w-px bg-border" />
+          <div className="space-y-14">
+            {experience.map((e, i) => (
+              <article key={i} className="reveal grid md:grid-cols-[180px_1fr] gap-6 md:gap-12 relative pl-8 md:pl-0">
+                <div className="absolute left-[-5px] md:left-[176px] top-2 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-background" />
+                <div className="font-mono text-xs text-muted-foreground md:text-right md:pr-8 pt-1">
+                  {e.period}
+                </div>
+                <div className="md:pl-12">
+                  <h3 className="text-xl md:text-2xl font-medium text-foreground">
+                    {e.role}
+                  </h3>
+                  <p className="text-primary text-sm mb-1">{e.org}</p>
+                  <p className="text-xs text-muted-foreground font-mono mb-4">{e.location}</p>
+                  <ul className="space-y-2.5 text-muted-foreground leading-relaxed">
+                    {e.bullets.map((b, j) => (
+                      <li key={j} className="flex gap-3">
+                        <span className="text-primary mt-2 h-px w-3 shrink-0 bg-primary/60" />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-24">
+          <p className="reveal font-mono text-xs tracking-widest text-primary uppercase mb-8">
+            Education
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {education.map((ed, i) => (
+              <div
+                key={i}
+                className="reveal rounded-2xl border border-border/60 bg-card/50 p-7 hover:border-primary/40 transition-colors"
+              >
+                <div className="flex items-baseline justify-between mb-2 gap-4">
+                  <h3 className="text-xl font-medium">{ed.school}</h3>
+                  <span className="font-mono text-xs text-muted-foreground whitespace-nowrap">
+                    {ed.period}
+                  </span>
+                </div>
+                <p className="text-primary text-sm mb-4">{ed.degree}</p>
+                <ul className="space-y-1.5 text-sm text-muted-foreground">
+                  {ed.details.map((d, j) => (
+                    <li key={j}>— {d}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
